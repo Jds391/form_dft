@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="fname" placeholder="John Doe..." /><br />
+        <label for="lname">Last Name</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="password">Password</label><br />
+        <input type="text" id="password" name="password" minlength="8" required><br />
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age"><br />
+        <label for="optin">Optin to Receive Our Awesome Emails</label><br />
+        <input type="checkbox" id="optin" name="optin" /><br />
+
+        <fieldset>
+            <legend>Favorite Character</legend>
+            <ul>
+                <li>
+                    <label for="Obiwan">Obi-wan</label>
+                    <input type="radio" name="FavCharacter" id="Obiwan"> <br>
+                </li>
+                <li>
+                    <label for="Anakin">Anakin</label>
+                    <input type="radio" name="FavCharacter" id="Anakin"> <br>
+                </li>
+                <li>
+                    <label for="Quigon">Qui-gon</label>
+                    <input type="radio" name="FavCharacter" id="Quigon"> <br>
+                </li>
+            </ul>
+        </fieldset>
+
+
+        <label for="FavChar">Favorite Character</label>
+        <select name="FavChar" id="FavChar">
+            <option value="Obiwan">Obi-wan</option>
+            <option value="Anakin">Anakin</option>
+            <option value="Quigon">Qui-gon</option>
+        </select>
+
+        <label for="details">Additional Details</label>
+        <textarea name="details" id="details" cols="30" rows="10"></textarea>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
